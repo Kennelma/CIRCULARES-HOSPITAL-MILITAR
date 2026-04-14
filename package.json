@@ -1,0 +1,16 @@
+{
+  "name": "circulares-hospital-militar",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+  "backend": "node backend/index.js",
+  "frontend": "npm start --prefix frontend",
+  "dev": "concurrently -n BACKEND,FRONTEND -c green,cyan \"npm run backend\" \"npm run frontend\""
+},
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}
