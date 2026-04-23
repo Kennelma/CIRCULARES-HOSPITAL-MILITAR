@@ -1,0 +1,388 @@
+/* RRHH Portal Styles */
+body, .portal-wrap { 
+  font-family: 'DM Sans', sans-serif; 
+  background: #f5f6fa; 
+}
+
+.rrhh-card { 
+  border: 0.5px solid #e5e7eb !important; 
+  border-radius: 12px !important; 
+  background: white;
+}
+
+.stat-label { 
+  font-size: .68rem; 
+  font-weight: 500; 
+  text-transform: uppercase; 
+  letter-spacing: .06em; 
+  color: #6b7280; 
+}
+
+.stat-value { 
+  font-size: 1.9rem; 
+  font-weight: 500; 
+  line-height: 1; 
+  color: #1a1a2e; 
+}
+
+.brand-dot  { 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  background: #185fa5; 
+  display: inline-block; 
+  margin-right: 5px; 
+}
+
+.brand-name { 
+  font-size: .7rem; 
+  font-weight: 500; 
+  color: #185fa5; 
+  text-transform: uppercase; 
+  letter-spacing: .06em; 
+}
+
+.section-title { 
+  font-size: .68rem; 
+  font-weight: 500; 
+  text-transform: uppercase; 
+  letter-spacing: .06em; 
+  color: #6b7280; 
+}
+
+.filter-btn { 
+  border-radius: 20px !important; 
+  font-size: .72rem; 
+  font-weight: 500; 
+  padding: 3px 12px; 
+  border: 0.5px solid #d1d5db !important; 
+  color: #6b7280 !important; 
+  background: transparent !important; 
+}
+
+.filter-btn:hover { 
+  background: #f3f4f6 !important; 
+}
+
+.filter-btn.active { 
+  background: #e6f1fb !important; 
+  color: #185fa5 !important; 
+  border-color: #b5d4f4 !important; 
+}
+
+.rrhh-search { 
+  background: #f9fafb; 
+  border: 0.5px solid #e5e7eb !important; 
+  border-radius: 8px !important; 
+  font-size: .8rem; 
+}
+
+.rrhh-table th { 
+  font-size: .72rem; 
+  font-weight: 500; 
+  color: #6b7280; 
+  border-bottom: 0.5px solid #e5e7eb; 
+  padding: 8px 12px; 
+}
+
+.rrhh-table td { 
+  font-size: .8rem; 
+  border-bottom: 0.5px solid #f3f4f6; 
+  padding: 10px 12px; 
+  vertical-align: middle; 
+}
+
+.rrhh-table tbody tr { 
+  cursor: pointer; 
+  transition: background .12s; 
+}
+
+.rrhh-table tbody tr:hover { 
+  background: #f5f8ff; 
+}
+
+.doc-icon { 
+  width: 28px; 
+  height: 28px; 
+  background: #fcebeb; 
+  border-radius: 6px; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0; 
+}
+
+.badge-activo { 
+  background: #e1f5ee; 
+  color: #0f6e56; 
+}
+
+.badge-nuevo { 
+  background: #e6f1fb; 
+  color: #185fa5; 
+}
+
+.badge-revision { 
+  background: #faeeda; 
+  color: #854f0b; 
+}
+
+.badge-archivado { 
+  background: #f1efe8; 
+  color: #5f5e5a; 
+}
+
+.btn-eye { 
+  background: none; 
+  border: none; 
+  padding: 4px 6px; 
+  border-radius: 6px; 
+  color: #9ca3af; 
+  transition: all .12s; 
+}
+
+.btn-eye:hover { 
+  background: #e6f1fb; 
+  color: #185fa5; 
+}
+
+.btn-trash { 
+  background: none; 
+  border: none; 
+  padding: 4px 6px; 
+  border-radius: 6px; 
+  color: #9ca3af; 
+  transition: all .12s; 
+}
+
+.btn-trash:hover { 
+  background: #fee2e2; 
+  color: #dc2626; 
+}
+
+.cal-nav-btn { 
+  background: none; 
+  border: 0.5px solid #e5e7eb; 
+  border-radius: 6px; 
+  padding: 3px 8px; 
+  cursor: pointer; 
+  color: #6b7280; 
+  font-size: .8rem; 
+}
+
+.cal-grid { 
+  display: grid; 
+  grid-template-columns: repeat(7, 1fr); 
+  gap: 2px; 
+}
+
+.cal-day-label { 
+  font-size: .65rem; 
+  color: #9ca3af; 
+  text-align: center; 
+  padding: 3px 0; 
+  font-weight: 500; 
+}
+
+.cal-day { 
+  aspect-ratio: 1; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 6px; 
+  font-size: .72rem; 
+  color: #1a1a2e; 
+  position: relative; 
+}
+
+.cal-day.has-doc { 
+  cursor: pointer; 
+  font-weight: 500; 
+  color: #185fa5; 
+  background: #e6f1fb; 
+}
+
+.cal-day.has-doc:hover { 
+  background: #b5d4f4; 
+}
+
+.cal-day.today { 
+  border: 1.5px solid #185fa5; 
+}
+
+.cal-dot { 
+  position: absolute; 
+  bottom: 2px; 
+  width: 4px; 
+  height: 4px; 
+  background: #185fa5; 
+  border-radius: 50%; 
+}
+
+.activity-item { 
+  cursor: pointer; 
+  border-radius: 6px; 
+  padding: 4px 6px; 
+  transition: background .12s; 
+}
+
+.activity-item:hover { 
+  background: #f5f8ff; 
+}
+
+.activity-dot { 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  flex-shrink: 0; 
+  margin-top: 3px; 
+}
+
+/* Modal Styles */
+.modal-content { 
+  border: 0.5px solid #e5e7eb !important; 
+  border-radius: 14px !important; 
+}
+
+.modal-header { 
+  border-bottom: 0.5px solid #e5e7eb; 
+  padding: 1rem 1.4rem; 
+}
+
+.modal-footer { 
+  border-top: 0.5px solid #e5e7eb; 
+  padding: .9rem 1.4rem; 
+}
+
+.modal-body { 
+  background: #f5f6fa; 
+}
+
+/* Upload Zone Styles */
+.upload-zone { 
+  border: 1.5px dashed #d1d5db; 
+  border-radius: 10px; 
+  padding: 1.5rem; 
+  text-align: center; 
+  background: #f9fafb; 
+  position: relative; 
+  transition: all .2s; 
+}
+
+.upload-zone:hover { 
+  border-color: #185fa5; 
+  background: #f5f8ff; 
+}
+
+.upload-zone input[type="file"] { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0; 
+  cursor: pointer; 
+}
+
+.upload-icon { 
+  background: #e6f1fb; 
+  width: 48px; 
+  height: 48px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 10px; 
+}
+
+.rrhh-label { 
+  font-size: .75rem; 
+  font-weight: 500; 
+  color: #4b5563; 
+  margin-bottom: 4px; 
+  display: block; 
+}
+
+.rrhh-input { 
+  border: 0.5px solid #e5e7eb !important; 
+  border-radius: 8px !important; 
+  font-size: .8rem; 
+  padding: 8px 12px; 
+}
+
+.btn-primary-rrhh { 
+  background: #185fa5; 
+  color: #fff; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 8px 16px; 
+  font-size: .82rem; 
+  font-weight: 500; 
+  display: flex; 
+  align-items: center; 
+  gap: 7px; 
+  transition: background .12s; 
+}
+
+.btn-primary-rrhh:hover { 
+  background: #0c447c; 
+}
+
+/* PDF Sheet Styles */
+.pdf-sheet { 
+  background: #fff; 
+  border: 0.5px solid #e5e7eb; 
+  border-radius: 10px; 
+  padding: 1.5rem; 
+  max-width: 460px; 
+  margin: 0 auto; 
+}
+
+.pdf-ttl { 
+  font-size: .88rem; 
+  font-weight: 500; 
+  color: #1a1a2e; 
+  margin-bottom: .8rem; 
+  padding-bottom: 8px; 
+  border-bottom: 0.5px solid #e5e7eb; 
+}
+
+.pdf-line { 
+  height: 9px; 
+  background: #f0f0f0; 
+  border-radius: 3px; 
+  margin-bottom: 8px; 
+}
+
+.page-ctrl { 
+  background: none; 
+  border: 0.5px solid #e5e7eb; 
+  border-radius: 6px; 
+  padding: 3px 9px; 
+  font-size: .82rem; 
+  color: #6b7280; 
+  cursor: pointer; 
+}
+
+.page-ctrl:disabled { 
+  opacity: .35; 
+  cursor: not-allowed; 
+}
+
+.btn-download { 
+  background: #185fa5; 
+  color: #fff; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 8px 16px; 
+  font-size: .82rem; 
+  font-weight: 500; 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 7px; 
+  cursor: pointer; 
+}
+
+.btn-download:hover { 
+  background: #0c447c; 
+}

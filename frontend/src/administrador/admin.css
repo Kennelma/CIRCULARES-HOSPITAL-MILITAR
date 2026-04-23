@@ -1,0 +1,297 @@
+/* admin.css */
+
+body,
+.portal-wrap {
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.rrhh-card {
+  border: 0.5px solid #e5e7eb !important;
+  border-radius: 12px !important;
+}
+
+.stat-label {
+  font-size: .68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a2e;
+}
+
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #185fa5;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.brand-name {
+  font-size: .7rem;
+  font-weight: 500;
+  color: #185fa5;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.section-title {
+  font-size: .68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #6b7280;
+}
+
+.rrhh-search {
+  background: #f9fafb;
+  border: 0.5px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  font-size: .8rem;
+}
+
+.rrhh-table th {
+  font-size: .72rem;
+  font-weight: 500;
+  color: #6b7280;
+  border-bottom: 0.5px solid #e5e7eb;
+  padding: 8px 12px;
+}
+
+.rrhh-table td {
+  font-size: .8rem;
+  border-bottom: 0.5px solid #f3f4f6;
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.rrhh-table tbody tr {
+  cursor: pointer;
+  transition: background .12s;
+}
+
+.rrhh-table tbody tr:hover {
+  background: #f5f8ff;
+}
+
+.doc-icon {
+  width: 28px;
+  height: 28px;
+  background: #fcebeb;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-activo {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.badge-nuevo {
+  background: #e6f1fb;
+  color: #185fa5;
+}
+
+.badge-borrador {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: #9ca3af;
+  transition: all .12s;
+}
+
+.btn-icon:hover {
+  background: #e6f1fb;
+  color: #185fa5;
+}
+
+.btn-icon.del:hover {
+  background: #fcebeb;
+  color: #dc2626;
+}
+
+/* Upload zone */
+
+.upload-zone {
+  border: 1.5px dashed #b5d4f4;
+  border-radius: 12px;
+  background: #f0f7ff;
+  padding: 2.4rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+  position: relative;
+}
+
+.upload-zone:hover,
+.upload-zone.drag {
+  border-color: #185fa5;
+  background: #e6f1fb;
+}
+
+.upload-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  background: #dbeeff;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .9rem;
+}
+
+/* Form inputs */
+
+.rrhh-input {
+  background: #f9fafb;
+  border: 0.5px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  font-size: .82rem;
+  color: #1a1a2e;
+}
+
+.rrhh-input:focus {
+  background: #fff;
+  border-color: #b5d4f4 !important;
+  box-shadow: 0 0 0 3px rgba(24,95,165,.08) !important;
+}
+
+.rrhh-label {
+  font-size: .72rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Botones */
+
+.btn-primary-rrhh {
+  background: #185fa5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-size: .82rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: background .12s;
+}
+
+.btn-primary-rrhh:hover {
+  background: #0c447c;
+}
+
+.btn-secondary-rrhh {
+  background: #fff;
+  color: #6b7280;
+  border: 0.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: .82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .12s;
+}
+
+.btn-secondary-rrhh:hover {
+  background: #f3f4f6;
+}
+
+.admin-badge {
+  background: #185fa5;
+  color: #fff;
+  font-size: .7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Layout (Sidebar/Navbar) */
+
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-wrapper {
+  width: 250px;
+  background: #fff;
+  border-right: 0.5px solid #e5e7eb;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.sidebar-link {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 500;
+  border-right: 3px solid transparent;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #f5f8ff;
+  color: #185fa5;
+  border-right-color: #185fa5;
+}
+
+.rrhh-navbar {
+  background: #fff;
+  border-bottom: 0.5px solid #e5e7eb;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
